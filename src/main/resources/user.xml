@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.springweb.charts.demo.model.Users">
+        <table name="users" schema="hms" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="11"/>
+            </id>
+            <basic name="type">
+                <column name="type" length="20"/>
+            </basic>
+            <basic name="userId">
+                <column name="userId" precision="11"/>
+            </basic>
+            <basic name="status">
+                <column name="status" precision="11"/>
+            </basic>
+            <basic name="loginTime">
+                <column name="loginTime" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="logoutTime">
+                <column name="logoutTime" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
